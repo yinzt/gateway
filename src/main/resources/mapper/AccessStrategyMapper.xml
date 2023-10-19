@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.com.xcsa.gateway.mapper.AccessStrategyMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="cn.com.xcsa.gateway.domain.po.AccessStrategy">
+        <id column="id" property="id"/>
+        <result column="tenant_id" property="tenantId"/>
+        <result column="login_name" property="loginName"/>
+        <result column="email" property="email"/>
+        <result column="phone" property="phone"/>
+        <result column="phone_verify" property="phoneVerify"/>
+        <result column="default_pwd" property="defaultPwd"/>
+        <result column="pwd_least" property="pwdLeast"/>
+        <result column="intensity_pwd" property="intensityPwd"/>
+        <result column="day_pwd" property="dayPwd"/>
+        <result column="sms" property="sms"/>
+        <result column="sms_verify" property="smsVerify"/>
+        <result column="token" property="token"/>
+        <result column="token_verify" property="tokenVerify"/>
+        <result column="create_time" property="createTime"/>
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id, tenant_id,login_name,email ,phone,phone_verify,default_pwd, pwd_least,intensity_pwd,day_pwd,sms,sms_verify,token,token_verify,create_time
+    </sql>
+
+</mapper>

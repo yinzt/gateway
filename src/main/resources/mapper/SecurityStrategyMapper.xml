@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.com.xcsa.gateway.mapper.SecurityStrategyMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="cn.com.xcsa.gateway.domain.po.SecurityStrategy">
+        <id column="id" property="id"/>
+        <result column="tenant_id" property="tenantId"/>
+        <result column="login_fail" property="loginFail"/>
+        <result column="unlock_method" property="unlockMethod"/>
+        <result column="unlock_time" property="unlockTime"/>
+        <result column="user_timeout" property="userTimeout"/>
+        <result column="admin_timeout" property="adminTimeout"/>
+        <result column="jump" property="jump"/>
+        <result column="ip_scope" property="ipScope"/>
+        <result column="admin_limit" property="adminLimit"/>
+        <result column="create_time" property="createTime"/>
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id, tenant_id,login_fail,unlock_method,unlock_time,user_timeout,admin_timeout,jump,ip_scope,admin_limit,create_time
+    </sql>
+
+</mapper>

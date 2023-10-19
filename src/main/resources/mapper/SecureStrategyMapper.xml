@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+        <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.com.xcsa.gateway.mapper.SecureStrategyMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="cn.com.xcsa.gateway.domain.po.SecureStrategy">
+        <id column="id" property="id"/>
+        <result column="protection_name" property="protectionName"/>
+        <result column="protection_strategy" property="protectionStrategy"/>
+        <result column="protection_user" property="protectionUser"/>
+        <result column="create_time" property="createTime"/>
+        <result column="uid" property="uid"/>
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id,protection_name,protection_strategy,protection_user,create_time,uid
+    </sql>
+
+</mapper>
